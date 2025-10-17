@@ -112,25 +112,25 @@
       <h3>Post 1 : Contoh 5 Kasus Intersection</h3>
       <p>Mahasiswa mengambil Mata Kuliah</p>
         <div class="img-container">
-          <img src="../tabel1.png" alt="Contoh relasi tabel database">
+          <img src="tabel1.png" alt="Contoh relasi tabel database">
           <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
         </div>
 
       <p>Pegawai mengikuti Proyek</p>
         <div class="img-container">
-          <img src="../tabel2.png" alt="Contoh relasi tabel database">
+          <img src="tabel2.png" alt="Contoh relasi tabel database">
           <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
         </div>
 
       <p>Siswa mengikuti Ekstrakurikuler</p>
         <div class="img-container">
-          <img src="../tabel3.png" alt="Contoh relasi tabel database">
+          <img src="tabel3.png" alt="Contoh relasi tabel database">
           <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
         </div>
 
       <p>Supplier menyuplai Barang</p>
         <div class="img-container">
-          <img src="../tabel4.png" alt="Contoh relasi tabel database">
+          <img src="tabel4.png" alt="Contoh relasi tabel database">
           <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
         </div>
 

@@ -1,0 +1,154 @@
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Galaxy Theme</title>
+  <style>
+    :root{
+      --bg1: #020615;
+      --bg2: #06142a;
+      --accent: #6ea8ff;
+      --card-glow: rgba(110,168,255,0.12);
+      --text: #e9f0ff;
+      --muted: #b6c7e6;
+      --pink: #ff8ec0;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(ellipse at top left, var(--bg2) 0%, var(--bg1) 60%);
+      color:var(--text);
+      padding:20px;
+      line-height:1.5;
+    }
+    .stars::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      background-image: radial-gradient(1px 1px at 10% 20%, #fff44 60%, transparent 61%),
+                        radial-gradient(1px 1px at 40% 10%, #fff 60%, transparent 61%),
+                        radial-gradient(1px 1px at 80% 40%, #fff 60%, transparent 61%),
+                        radial-gradient(1px 1px at 30% 80%, #fff 60%, transparent 61%);
+      opacity:0.06;
+      pointer-events:none;
+      z-index:0;
+    }
+    .container{
+      max-width:800px;
+      margin:0 auto;
+      position:relative;
+      z-index:1;
+    }
+    .profile{
+      text-align:center;
+      background:linear-gradient(180deg, rgba(252, 219, 135, 0.473), rgba(57, 57, 57, 0.01));
+      border-radius:16px;
+      padding:20px;
+      box-shadow:0 6px 18px rgba(2,6,21,0.6);
+      border:1px solid rgba(255,255,255,0.04);
+      margin-bottom:20px;
+    }
+    .avatar{
+      width:120px;height:120px;border-radius:50%;overflow:hidden;margin:0 auto 14px;
+      border:3px solid rgba(110,168,255,0.18);
+    }
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .name{font-size:22px;font-weight:700;margin-bottom:6px}
+    .role{color:var(--muted);font-size:14px;margin-bottom:10px}
+    .bio{font-size:14px;color:var(--muted);margin-bottom:14px}
+        .hero {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .hero iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 405px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: var(--card-shadow);
+    }
+    .post{
+      background:linear-gradient(180deg, rgba(252, 219, 135, 0.268), rgba(72, 72, 72, 0.625));
+      border-radius:12px;
+      padding:16px;
+      border:1px solid rgba(255,255,255,0.03);
+      margin-bottom:18px;
+    }
+    .post h3{margin-bottom:8px;font-size:18px;border-left: 10px solid #ffffff;padding-left: 10px;}
+    .post p{font-size:14px;color:var(--muted)}
+
+       .img-container {
+      text-align: center;
+      margin: 18px 0;
+    }
+    .img-container img {
+      max-width: 80%;
+      border-radius: 12px;
+      border: 1px solid rgba(252,219,135,0.2);
+      box-shadow: 0 0 22px rgba(252,219,135,0.25);
+      transition: transform 0.3s ease;
+    }
+    .img-container img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 0 30px rgba(252,219,135,0.35);
+    }
+    footer{margin-top:20px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.05);text-align:center;font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body class="stars">
+  <div class="container">
+    <div class="profile">
+      <div class="avatar">
+        <img src="pict1.jpg" alt="Foto Pembuat">
+      </div>
+      <div class="name">AHMAD SYARBINI SYAHBAN</div>
+      <div class="role">Mahasiswa Teknik Informatika UBP</div>
+      <div class="role">NIM : 24416255201073</div>
+      <div class="bio">Blog Basis Data</div>    
+    </div>
+
+    <div class="post">
+      <h3>Post 1 : Contoh 5 Kasus Intersection</h3>
+      <p>Mahasiswa mengambil Mata Kuliah</p>
+        <div class="img-container">
+          <img src="../tabel1.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+
+      <p>Pegawai mengikuti Proyek</p>
+        <div class="img-container">
+          <img src="../tabel2.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+
+      <p>Siswa mengikuti Ekstrakurikuler</p>
+        <div class="img-container">
+          <img src="../tabel3.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+
+      <p>Supplier menyuplai Barang</p>
+        <div class="img-container">
+          <img src="../tabel4.png" alt="Contoh relasi tabel database">
+          <p class="img-caption">Gambar: Contoh relasi tabel dengan Primary Key dan Foreign Key</p>
+        </div>
+
+      <p>Dokter melayani Pasien</p>
+        <div class="hero">
+            <iframe src="https://www.youtube.com/embed/SqyUI_sog28?si=nZSIy1HMOrnWq6iJ" 
+            title="YouTube video" allowfullscreen></iframe>
+        </div>
+    </div>
+
+      <article class="post">
+        <h2>Post 2: Apa Itu Normalisasi pada ERD?</h2>
+        <p><strong>Normalisasi</strong> adalah proses penyusunan tabel dalam database agar data tersimpan dengan efisien dan tidak terjadi pengulangan (redundansi).
+            Proses ini dilakukan setelah pembuatan ERD (Entity Relationship Diagram) untuk memastikan bahwa setiap data ditempatkan pada tabel yang tepat dan saling terhubung secara logis.</p> 
+        <ul>
+          <br>Tujuan utamanya adalah <strong>agar struktur database lebih rapi, konsisten, dan mudah dipelihara.</strong>
+        </ul>
+      </article>
+    <footer>
+      Dibuat untuk tugas Basis Data • ABIN• <a href="https://www.ubpkarawang.ac.id" target="_blank" style="color:rgba(252, 219, 135, 0.473)">UBP Karawang</a>
+    </footer>
